@@ -1,0 +1,16 @@
+{% extends 'layouts/nav.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Create a new project</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button>
+                Save
+            </button>
+        </form>
+    </div>
+
+{% endblock %}
